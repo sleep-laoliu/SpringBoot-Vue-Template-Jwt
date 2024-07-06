@@ -53,8 +53,7 @@ public class AuthorizeController {
     @PostMapping("/register")
     @Operation(summary = "用户注册操作")
     public RestBean<Void> register(@RequestBody @Valid EmailRegisterVO vo){
-        return this.messageHandle(() ->
-                accountService.registerEmailAccount(vo));
+        return null;
     }
 
     /**
